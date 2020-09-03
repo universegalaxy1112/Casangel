@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".tabs.home.QuickCreateActivity">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#444242"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50">
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:id="@+id/iv_btnBack"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_back_circle"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50" />
+            <com.koonat.easyfont.TextView
+                app:font_path="fonts/century_gothic.ttf"
+                android:id="@+id/tv_titleViewer"
+                android:text="@string/quick_create"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:id="@+id/iv_btnDone"
+                android:layout_marginEnd="@dimen/dip_10"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_check_circle_outline_24px"
+                android:layout_width="@dimen/dip_25"
+                android:layout_height="@dimen/dip_50" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_70">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_categoryList"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:layout_marginStart="@dimen/dip_10"
+            android:layout_marginEnd="@dimen/dip_10"
+            android:horizontalSpacing="@dimen/dip_10"
+            android:verticalSpacing="@dimen/dip_10"
+            android:id="@+id/gv_templateGrid"
+            android:numColumns="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:visibility="invisible"
+            android:id="@+id/aiv_loading"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="@dimen/dip_50"
+            app:indicatorName="LineScalePulseOutRapidIndicator"
+            app:indicatorColor="@color/gray"
+            />
+    </RelativeLayout>
+</LinearLayout>

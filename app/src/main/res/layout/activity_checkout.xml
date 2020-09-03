@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    tools:context=".CheckoutActivity">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#444242"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50">
+            <com.koonat.easyfont.TextView
+                android:id="@+id/tv_titleViewer"
+                android:text="@string/checkout"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_20"
+                app:font_path="fonts/century_gothic.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:id="@+id/iv_btnBack"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_back_circle"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <WebView
+        android:id="@+id/checkout_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"/>
+</LinearLayout>

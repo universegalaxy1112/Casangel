@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.itikarus.miska.library.widget.SquareImageView2
+        android:id="@+id/siv_imgViewer"
+        android:layout_marginTop="@dimen/dip_15"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/dip_15"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        android:id="@+id/tv_titleViewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/dip_10"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

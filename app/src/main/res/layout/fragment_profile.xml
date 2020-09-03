@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dip_20"
+    android:paddingEnd="@dimen/dip_20"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".tabs.account.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/siv_userImgViewer"
+        android:layout_weight="1"
+        android:src="@drawable/img_person"
+        app:civ_fill_color="#d7d8dc"
+        android:layout_margin="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_nameViewer"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_20"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_usernameViewer"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_emailViewer"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="@dimen/sp_15"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_phoneNumViewer"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_address1Viewer"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_address2Viewer"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_15"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/dip_30"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_btnMYCreations"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:background="@drawable/outline_circle_black"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_heart"
+                android:layout_width="@dimen/dip_60"
+                android:layout_height="@dimen/dip_60"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:text="@string/my_creations"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ll_btnMyOrders"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:background="@drawable/outline_circle_black"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_shipping"
+                android:layout_width="@dimen/dip_60"
+                android:layout_height="@dimen/dip_60"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:text="@string/my_orders"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

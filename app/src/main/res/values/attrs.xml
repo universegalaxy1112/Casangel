@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer" />
+        <attr name="column_count_portrait" format="integer" />
+        <attr name="column_count_landscape" format="integer" />
+        <attr name="item_margin" format="dimension" />
+        <attr name="grid_paddingLeft" format="dimension" />
+        <attr name="grid_paddingRight" format="dimension" />
+        <attr name="grid_paddingTop" format="dimension" />
+        <attr name="grid_paddingBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ImageBadgeView">
+
+        <attr name="ibv_badgeValue" format="integer" />
+        <attr name="ibv_maxBadgeValue" format="integer" />
+        <attr name="ibv_badgePadding" format="dimension" />
+        <attr name="ibv_fixedBadgeRadius" format="dimension" />
+
+        <attr name="ibv_visibleBadge" format="boolean" />
+        <attr name="ibv_badgeLimitValue" format="boolean" />
+        <attr name="ibv_roundBadge" format="boolean" />
+        <attr name="ibv_fixedRadius" format="boolean" />
+        <!-- Use for the custom badge drawable -->
+        <attr name="ibv_badgeOvalAfterFirst" format="boolean" />
+        <attr name="ibv_showCounter" format="boolean" />
+        <attr name="ibv_badgePosition">
+            <enum name="top_left" value="0" />
+            <enum name="top_right" value="1" />
+            <enum name="bottom_left" value="2" />
+            <enum name="bottom_right" value="3" />
+            <enum name="center" value="4" />
+        </attr>
+
+        <attr name="ibv_badgeTextSize" format="dimension" />
+        <attr name="ibv_badgeTextFont" format="string|reference" />
+        <attr name="ibv_badgeTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="italic_bold" value="3" />
+        </attr>
+
+        <attr name="ibv_badgeBackground" format="color|reference" />
+        <attr name="ibv_badgeColor" format="color" />
+        <attr name="ibv_badgeTextColor" format="color" />
+
+    </declare-styleable>
+</resources>

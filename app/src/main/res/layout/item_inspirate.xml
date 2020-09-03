@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.legacy.widget.Space
+        android:visibility="gone"
+        android:id="@+id/topSpace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_40" />
+    <com.itikarus.miska.library.widget.RatioImageView
+        android:id="@+id/riv_imgViewer"
+        android:layout_marginTop="@dimen/dip_15"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/dip_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/dip_10"
+        android:id="@+id/tv_content"
+        android:maxLines="2"
+        android:textSize="@dimen/sp_12"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.itikarus.miska.library.widget.TouchImageView
+            android:id="@+id/imgViewer"
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:layout_marginStart="@dimen/dip_10"
+            android:layout_marginEnd="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_marginBottom="@dimen/dip_20"
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Casangel</string>
+
+    <string name="wait">Espere…</string>
+    <string name="string_msg_email_invalid">Este correo electrónico no es válido.</string>
+
+    <string name="take_picture">Foto tomada</string>
+    <string name="msg_instruction">Tome una foto o elija una imagen de la galería, luego comience a diseñar su propia espacio</string>
+    <string name="msg_instruction2">Tome una fotografía del espacio a decorar y después agregue todos los productos que quieras</string>
+    <string name="no_internet"> La conexión a Internet no está disponible</string>
+    <string name="retry"> Procesar de nuevo</string>
+    <string name="permission_denied">Su solicitud de permiso fue denegada.</string>
+
+    <string name="invalid_first_name"> Nombre inválido</string>
+    <string name="invalid_last_name"> Apellido inválido</string>
+    <string name="invalid_email"> Dirección de correo electrónico no válida</string>
+    <string name="invalid_password"> Contraseña invalida</string>
+    <string name="invalid_name"> Nombre inválido</string>
+    <string name="invalid_address"> Dirección inválida</string>
+    <string name="invalid_company"> Empresa inválida</string>
+    <string name="invalid_contact"> Número de contacto no válido</string>
+    <string name="invalid_username">Nombre de usuario no válido</string>
+    <string name="required_field">Campo requerido</string>
+    <string name="invalid_phone_no">Numero de telefono invalido</string>
+    <string name="phone">Teléfono</string>
+    <string name="state">Estado</string>
+
+    <string name="unexpected_response"> Respuesta inesperada del servidor</string>
+    <string name="coupon"> Cupón</string>
+    <string name="coupon_code"> Código promocional</string>
+    <string name="coupon_amount"> Cantidad de cupón</string>
+    <string name="coupon_discount"> Cupón de descuento</string>
+    <string name="coupon_type"> Tipo de cupón</string>
+    <string name="sample_coupons"> Códigos de cupón de muestra</string>
+    <string name="payment_method"> Método de pago</string>
+    <string name="billing_address"> Dirección de Envio</string>
+    <string name="shipping_address"> Dirección de Envío</string>
+    <string name="shipping_method"> Método de envío</string>
+    <string name="add_coupon"> Añadir cupón?</string>
+    <string name="coupon_removes_other_coupons"> Este cupón puede eliminar todos los otros cupones!</string>
+    <string name="ok">DE ACUERDO</string>
+    <string name="cancel">Cancelar</string>
+
+
+    <string name="invalid_coupon"> Cupón no válido</string>
+    <string name="coupon_expired"> ¡El cupón ha expirado!</string>
+    <string name="coupon_applied"> Cupón ya aplicado!</string>
+    <string name="coupon_cannot_be_applied"> ¡El cupón no se puede aplicar!</string>
+    <string name="coupon_used_by_you"> ¡Ya has usado este cupón!</string>
+    <string name="coupon_used_by_all"> Cupón ha sido utilizado por usuarios limitados!</string>
+    <string name="coupon_is_not_for_you"> Usted no es aplicable para utilizar este cupón!</string>
+    <string name="coupon_cannot_used_with_existing"> ¡El cupón no se puede utilizar con el cupón existente!</string>
+    <string name="coupon_is_not_for_sale_items"> ¡El cupón no se puede utilizar en artículos en oferta!</string>
+    <string name="coupon_is_not_for_too_many_products"> ¡El cupón no se puede utilizar en muchos productos!</string>
+    <string name="coupon_is_not_for_these_products"> ¡El cupón no es válido para estos productos!</string>
+    <string name="coupon_is_not_for_these_categories"> ¡El cupón no es válido para esta categoría de productos!</string>
+    <string name="coupon_is_not_for_excluded_products"> ¡El cupón no se puede utilizar en productos excluidos!</string>
+    <string name="coupon_is_not_for_excluded_categories"> ¡El cupón no se puede utilizar en categorías excluidas!</string>
+    <string name="coupon_max_amount_is_less_than_order_total"> ¡El total del carrito no cumple con la cantidad máxima de cupón!</string>
+    <string name="coupon_min_amount_is_greater_than_order_total"> ¡El total del carrito no cumple con la cantidad mínima para el cupón!</string>
+
+    <string name="total"> Total</string>
+    <string name="record_not_found"> ningún record fue encontrado</string>
+
+    <string name="order_id"> Solicitar ID</string>
+    <string name="order_status"> Estado del pedido</string>
+    <string name="order_date"> Fecha de orden</string>
+    <string name="order_details"> Detalles del pedido</string>
+    <string name="order_confirmed"> orden confirmada</string>
+    <string name="order_notes"> pedidos</string>
+    <string name="cancel_order"> Cancelar orden</string>
+    <string name="no_of_products"> No. de productos</string>
+
+    <string name="checkout_price"> Precio de salida</string>
+    <string name="view_detail">Ver Detalle</string>
+    <string name="total_price"> Precio total</string>
+
+    <string name="full_name"> Nombre completo</string>
+    <string name="city"> Ciudad</string>
+    <string name="address"> Dirección</string>
+    <string name="products"> Productos</string>
+    <string name="subtotal"> Total parcial</string>
+    <string name="tax"> Impuesto</string>
+    <string name="shipping"> Envío</string>
+    <string name="discount"> Descuento</string>
+    <string name="choose_option"> Elija la opción</string>
+
+    <string name="product_title"> Titulo del producto</string>
+    <string name="category"> Categoría</string>
+    <string name="product_price"> Precio del producto</string>
+    <string name="search">Buscar</string>
+    <string name="search_product_by_name"> Escribe algo para buscar</string>
+
+    <string name="email_address"> Dirección de correo</string>
+    <string name="save"> Guardar</string>
+    <string name="send"> Enviar</string>
+    <string name="forgot_your_password"> ¿Olvidaste tu contraseña?</string>
+    <string name="my_account">Mi cuenta</string>
+    <string name="instructions">Instrucciones</string>
+    <string name="checkout">Revisa</string>
+    <string name="create_your_space">CREA TU ESPACIO</string>
+    <string name="templates">PLANTILLAS</string>
+    <string name="my_creations">Mis creaciones</string>
+    <string name="inspirate">Inspirate</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="not_a_member">¿no es un miembro?</string>
+    <string name="signup">Regístrate</string>
+    <string name="order_info">Información del pedido</string>
+    <string name="quick_create">Creación rápida</string>
+    <string name="shopping_cart">Carrito de compras</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="identification_number">Número de identificación</string>
+    <string name="already_have_account">¿Ya tienes una cuenta?</string>
+    <string name="store">TIENDA</string>
+    <string name="trends">Tendencias</string>
+    <string name="loading">Cargando…</string>
+    <string name="my_orders">Mis ordenes</string>
+    <string name="price">Precio</string>
+    <string name="quantity">Cantidad</string>
+    <string name="home">Home</string>
+    <string name="creations">Las creaciones</string>
+    <string name="ideas">IDEAS</string>
+    <string name="account">CUENTA</string>
+    <string name="thank_you">¡Gracias!</string>
+    <string name="final_purchase">FINALIZAR COMPRA</string>
+    <string name="thank_for_shopping">gracias por comprar con nosotros!</string>
+    <string name="add_cart">Añadir al carrito</string>
+    <string name="add_more_products">" Añadir mas productos"</string>
+    <string name="cart_empty">El carrito esta vacío</string>
+    <string name="coution">precaución</string>
+    <string name="msg_delete_project">¿Borrarás este proyecto?</string>
+    <string name="apply">Aplicar</string>
+    <string name="just_a_moment">Espera un momento por favor…</string>
+    <string name="out_of_stock">Agotado</string>
+
+    <string name="msg_add_to_cart">Producto añadido</string>
+
+    <string name="ahead">Adelante</string>
+    <string name="behind">Atras</string>
+    <string name="save_your_project">" Proyecto guardado"</string>
+    <string name="input_name">Nombre de entrada</string>
+    <string name="type_space_name">" Escribe el nombre de tu espacio"</string>
+    <string name="save_space_success">" Su espacio fue guardado con éxito."</string>
+    <string name="select_items">" Por favor seleccione sus artículos"</string>
+    <string name="saving">Guardar...</string>
+</resources>

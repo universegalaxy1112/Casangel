@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:background="@drawable/background_outline_black2"
+        android:padding="@dimen/dip_3"
+        android:layout_margin="@dimen/dip_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/imgViewer"
+            android:layout_width="@dimen/dip_70"
+            android:layout_height="@dimen/dip_70"/>
+    </RelativeLayout>
+</RelativeLayout>

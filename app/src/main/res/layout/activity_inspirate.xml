@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".tabs.idea.InspirateActivity">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#444242"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50">
+            <com.koonat.easyfont.TextView
+                app:font_path="fonts/century_gothic.ttf"
+                android:id="@+id/tv_titleViewer"
+                android:text="@string/inspirate"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categoryList"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_40">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.etsy.android.grid.StaggeredGridView
+            android:layout_marginTop="@dimen/dip_10"
+            android:id="@+id/sgv_inspirateList"
+            app:item_margin="@dimen/dip_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:visibility="invisible"
+            android:id="@+id/aiv_loading"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="@dimen/dip_50"
+            app:indicatorName="LineScalePulseOutRapidIndicator"
+            app:indicatorColor="@color/gray"
+            />
+    </RelativeLayout>
+</LinearLayout>

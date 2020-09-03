@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tabs.creations.CreationsActivity">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#444242"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50">
+            <com.koonat.easyfont.TextView
+                app:font_path="fonts/century_gothic.ttf"
+                android:id="@+id/tv_titleViewer"
+                android:text="@string/my_creations"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_margin="@dimen/dip_5"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/dip_10"
+        android:horizontalSpacing="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridView>
+</LinearLayout>

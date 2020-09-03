@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabs.account.OrdersActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#444242"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50">
+            <com.koonat.easyfont.TextView
+                app:font_path="fonts/century_gothic.ttf"
+                android:id="@+id/tv_titleViewer"
+                android:text="@string/my_orders"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:id="@+id/iv_btnBack"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_back_circle"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50" />
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:layout_toStartOf="@id/iv_btnBack"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_search_white_24px"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orders_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/empty_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_not_found"
+            android:textSize="18sp"
+            android:textColor="@color/dark_gray"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

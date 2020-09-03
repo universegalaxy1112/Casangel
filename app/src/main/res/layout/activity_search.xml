@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+    <androidx.cardview.widget.CardView
+        app:cardElevation="@dimen/dip_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#444242"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50">
+            <com.koonat.easyfont.TextView
+                app:font_path="fonts/century_gothic.ttf"
+                android:id="@+id/tv_titleViewer"
+                android:text="@string/search"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:id="@+id/iv_btnBack"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_back_circle"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50" />
+            <com.itikarus.miska.library.widget.ClickEffectImageView
+                android:layout_toStartOf="@id/iv_btnBack"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip_10"
+                android:src="@drawable/ic_search_white_24px"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50" />
+            <ru.nikartm.support.ImageBadgeView
+                android:layout_marginEnd="@dimen/dip_10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/ibv_cartIcon"
+                android:layout_width="@dimen/dip_40"
+                android:layout_height="@dimen/dip_40"
+                android:layout_gravity="center"
+                app:ibv_badgeValue="0"
+                app:ibv_badgeTextSize="@dimen/sp_10"
+                app:ibv_fixedBadgeRadius="@dimen/dip_8"
+                app:ibv_badgeTextStyle="bold"
+                app:ibv_badgeTextColor="#ff0000"
+                app:ibv_badgeColor="#ffffff"
+                app:ibv_badgeLimitValue="false"
+                android:src="@drawable/ic_store_u" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white" >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_editText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:queryHint = "@string/search_product_by_name"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionSearch"
+            android:textSize="14sp"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/light_gray"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_corners_edittext_dark" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginStart="@dimen/dip_10"
+        android:layout_marginEnd="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:horizontalSpacing="@dimen/dip_10"
+            android:verticalSpacing="@dimen/dip_10"
+            android:id="@+id/gv_products"
+            android:numColumns="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <com.wang.avi.AVLoadingIndicatorView
+            android:visibility="invisible"
+            android:id="@+id/aiv_loading"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dip_50"
+            android:layout_height="@dimen/dip_50"
+            app:indicatorName="LineScalePulseOutRapidIndicator"
+            app:indicatorColor="@color/gray"
+            />
+        <TextView
+            android:id="@+id/empty_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_not_found"
+            android:textSize="18sp"
+            android:textColor="@color/dark_gray"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>
